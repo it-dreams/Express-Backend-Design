@@ -12,3 +12,4 @@ Commands
 8. npm i mongoose 
 9. npm i request
 10. npm i -D nodemon concurrently
+11. npm i chalk (Colorize the console)
