@@ -1,5 +1,6 @@
 const express = require("express");
 const connectDB = require('./config/db');
+const chalk = require('chalk');
 
 const app = express();
 
@@ -21,4 +22,4 @@ app.use('/api/posts', require('./routes/api/posts'));
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`Server started on Port ${PORT}`));
+app.listen(PORT, () => console.log(chalk.bgWhite.greenBright.italic(`Server started on Port ${PORT}`)));
